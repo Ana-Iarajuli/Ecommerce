@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Project</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
         <a href="#"><img src="images/logo.png" alt="logo image"></a>
         <nav>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </nav>
@@ -30,43 +29,76 @@
     </header>
 
     <section id="page-header" class="about-header">
-            <h2 id="product">#KnowUs</h2>
-            <p>Save more with coupons & up to 70% off!</p>
+            <h2 id="product">#Cart</h2>
+            <p>Add your coupon & SAVE up to 70%!</p>
     </section>
 
-    <section id="about-head" class="section-p1">
-        <img src="images/about/a6.jpg" alt="">
-        <div>
-            <h2>Who We Are?</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti, dolor similique, consectetur unde delectus fugit 
-                quam quasi facilis eos ea enim inventore! Tempora quidem
-                nostrum laborum mollitia aut totam ullam?
-            </p>
-            <abbr title="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti, dolor similique, consectetur unde delectus</abbr>
-
-            <marquee loop="-1" scrollamount="5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti, dolor similique, consectetur unde delectus</marquee>
-        </div>
+    <section id="cart-section" class="section-p1">
+        <table>
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></i></td>
+                    <td><img src="images/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></i></td>
+                    <td><img src="images/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></i></td>
+                    <td><img src="images/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$128.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$128.19</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="about-app" class="section-p1">
-        <h1>Download Our <a href="#">App</a></h1>
-        <div class="video">
-            <video autoplay muted loop src="images/about/1.mp4"></video>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
         </div>
-    </section>
-
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up For Newsletter</h4>
-            <p>Get e-mail updates about our latest shop and <span>special offers.</span></p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 335</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
         </div>
     </section>
 
