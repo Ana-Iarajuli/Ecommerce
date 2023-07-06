@@ -101,8 +101,7 @@ header {
     transition: 0.3s ease;
 }
 
-#navbar li a:hover,
-#navbar li a.active {
+#navbar li a:hover {
     color: #088178;
 }
 
